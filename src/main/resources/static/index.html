@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig 2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<script src="index.js"></script>
+    <div class="billettsystem">
+        <h1 class="overskrift">Kinobilletter</h1>
+        <div class="inputverdier">
+            <select id="film">
+                <option selected="true" disabled="disabled">Velg film</option>
+                <option value="spiderman">Spiderman</option>
+                <option value="the matrix">The Matrix</option>
+                <option value="verdens verste menneske">Verdens verste menneske</option>
+                <option value="drive my car">Drive my car</option>
+            </select>
+        </div>
+
+        <div>
+            <input id="antall" type="number" required placeholder="Antall">
+        </div>
+
+        <div>
+            <input id="fornavn" required placeholder="Fornavn" type="text">
+            <input id="etternavn" required placeholder="Etternavn" type="text">
+        </div>
+
+        <div>
+            <input id="tlfnr" type="number" required placeholder="Telefonnummer">
+        </div>
+
+        <div>
+            <input id="epost" required placeholder="Epost">
+        </div>
+
+
+        <div>
+            <button onclick="kjopeProsess()">Kjøp billett</button>
+        </div>
+
+                <h1>Alle billetter</h1>
+
+                <div id="resultatUt"></div>
+
+                <div>
+                    <button onclick="tomBillett()">Slett alle billetter</button>
+                </div>
+            </div>
+</body>
+</html>
